@@ -10,8 +10,10 @@ const GoalInput = props => {
       };
 
     const addGoalHandler = () => {
+        if(enteredGoal != '') {
         props.onAddGoal(enteredGoal);
         setEnteredGoal('');
+        }
     };
 
     
